@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 174.96 254.17">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Dégradé);
+        stroke: url(#Dégradé_sans_nom_6801);
+        stroke-miterlimit: 10;
+        stroke-width: .85px;
+      }
+    </style>
+    <linearGradient id="Dégradé" x1="-138.1" y1="284.53" x2="102.72" y2="284.53" gradientTransform="translate(-144.98 -83.3) rotate(-47.61) scale(1.06 1.09)" gradientUnits="userSpaceOnUse">
+      <stop offset=".08" stop-color="#000"/>
+      <stop offset=".09" stop-color="#040009"/>
+      <stop offset=".1" stop-color="#0f0022"/>
+      <stop offset=".12" stop-color="#21004c"/>
+      <stop offset=".14" stop-color="#3a0086"/>
+      <stop offset=".16" stop-color="#5a00ce"/>
+      <stop offset=".17" stop-color="#6f00ff"/>
+      <stop offset=".28" stop-color="#1a00ff"/>
+      <stop offset=".37" stop-color="#3cfccb"/>
+      <stop offset=".5" stop-color="#fff"/>
+      <stop offset=".6" stop-color="#ffef3f"/>
+      <stop offset=".7" stop-color="#ffa100"/>
+      <stop offset=".8" stop-color="#ff009a"/>
+      <stop offset=".9" stop-color="#b6269a"/>
+      <stop offset=".97" stop-color="#9e329a"/>
+    </linearGradient>
+    <linearGradient id="Dégradé_sans_nom_6801" data-name="Dégradé sans nom 6801" x1="-140.29" y1="284.52" x2="104.63" y2="284.52" gradientTransform="translate(-144.98 -83.3) rotate(-47.61) scale(1.06 1.09)" gradientUnits="userSpaceOnUse">
+      <stop offset=".08" stop-color="#000" stop-opacity=".9"/>
+      <stop offset=".09" stop-color="#04000a" stop-opacity=".9"/>
+      <stop offset=".1" stop-color="#100026" stop-opacity=".9"/>
+      <stop offset=".12" stop-color="#240054" stop-opacity=".9"/>
+      <stop offset=".14" stop-color="#400095" stop-opacity=".9"/>
+      <stop offset=".17" stop-color="#6400e5" stop-opacity=".9"/>
+      <stop offset=".17" stop-color="#6f00ff" stop-opacity=".9"/>
+      <stop offset=".28" stop-color="#1a00ff"/>
+      <stop offset=".37" stop-color="#3cfccb" stop-opacity=".8"/>
+      <stop offset=".5" stop-color="#fff" stop-opacity=".4"/>
+      <stop offset=".6" stop-color="#ffef3f" stop-opacity=".9"/>
+      <stop offset=".7" stop-color="#ffa100" stop-opacity=".9"/>
+      <stop offset=".8" stop-color="#ff009a"/>
+      <stop offset=".93" stop-color="#9e329a"/>
+    </linearGradient>
+  </defs>
+  <g id="Calque_7" data-name="Calque 7">
+    <polygon points="35.15 78.05 116.21 5.89 57.2 149.68 124.23 118.61 102.2 154.44 174.96 126.82 65.59 221.1 126.68 196.71 106.17 220.65 8.02 254.17 113.65 164.16 74.17 177.57 92.24 147.72 33.36 173.98 83.23 52.41 34.07 97.87 35.15 78.05"/>
+    <polygon class="cls-1" points="29.11 73.69 110.16 1.54 51.15 145.33 118.18 114.25 96.15 150.09 168.91 122.47 59.54 216.75 120.63 192.35 100.13 216.3 1.97 249.82 107.6 159.8 68.12 173.22 86.19 143.36 27.32 169.63 77.18 48.05 28.02 93.51 29.11 73.69"/>
+  </g>
+</svg>

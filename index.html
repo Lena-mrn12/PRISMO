@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRISMO — Ultra Chrome Configurator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.0.4/jscolor.js"></script>
+</head>
+<body>
+
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <nav>
+    <a href="accueil.html" class="nav-logo"><img src="logo.svg" alt="Logo"></a>
+    <div class="nav-center">
+      <span class="nav-item">ULTRA CHROME</span>
+      <span class="nav-sep">//</span>
+      <span class="nav-item">CONFIGURATEUR</span>
+    </div>
+    <div class="nav-right">
+      <span class="sys-dot"></span>
+      <span class="sys-label">SYS ONLINE</span>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="col-visual">
+      <div class="visual-container">
+        <div class="hud-corner tl"></div>
+        <div class="hud-corner tr"></div>
+        <div class="hud-corner bl"></div>
+        <div class="hud-corner br"></div>
+        <div class="hud-label top-left">UC_2024 // REF_0047</div>
+        <div class="hud-label top-right" id="hud-matiere">MAT // CUIR</div>
+        <div class="hud-label bottom-left" id="hud-hex">#FF7F00</div>
+        <div class="hud-label bottom-right">PRISMO.LAB</div>
+
+        <div class="image-wrap" id="image-wrap">
+          <img id="background-image" src="bustierPantone.jpg" alt="Ultra Chrome">
+
+          <svg id="product-svg" viewBox="0 0 1200 1200">
+            <path id="product-shape" d="M565.43,883.71l60.4-205.92-57.66,34.02,70.88-224.5-195.58,163.98s-7.8,4.53-6.78-13.84c0,0-8.39-63.94-10.96-72.84l28.16-14.57-3.17,27.66,157.85-129.89s59.87,26.98,95.92,11.59l-53.55,150.94,51.23-35-41.32,160.22s26.8-20.85,50.95-48.58c0,0,23.14-24.48,25.38-32.31s15.2-20.68,15.2-20.68c0,0,6.04-11.29,7.38-16.43s10.51-13.98,10.51-13.98c0,0-4.02,16.55-3.69,22.47s2.8,29.29,3.24,33.76-5.48,28.96-5.48,28.96c0,0-14.42,29.4-32.65,45.95s-80.16,75.47-80.16,75.47l-56.8,50.42-29.32,23.09Z"/>
+          </svg>
+
+          <svg id="product-svg-2" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <filter id="f-cuir">
+                <feTurbulence type="fractalNoise" baseFrequency="0.06 0.04" numOctaves="4" seed="3" result="n"/>
+                <feColorMatrix in="n" type="matrix" values="0.3 0 0 0 0.1  0.15 0 0 0 0.06  0.05 0 0 0 0.02  0 0 0 1 0"/>
+              </filter>
+              <pattern id="p-cuir" patternUnits="userSpaceOnUse" width="1200" height="1200">
+                <rect width="1200" height="1200" filter="url(#f-cuir)"/>
+              </pattern>
+              <filter id="f-daim">
+                <feTurbulence type="fractalNoise" baseFrequency="0.18" numOctaves="6" seed="7" result="n"/>
+                <feColorMatrix in="n" type="matrix" values="0.15 0 0 0 0.6  0.12 0 0 0 0.5  0.08 0 0 0 0.35  0 0 0 1 0"/>
+              </filter>
+              <pattern id="p-daim" patternUnits="userSpaceOnUse" width="1200" height="1200">
+                <rect width="1200" height="1200" filter="url(#f-daim)"/>
+              </pattern>
+              <filter id="f-velours">
+                <feTurbulence type="fractalNoise" baseFrequency="0.008 0.05" numOctaves="3" seed="15" result="n"/>
+                <feColorMatrix in="n" type="matrix" values="0.15 0 0 0 0.05  0.06 0 0 0 0.02  0.3 0 0 0 0.15  0 0 0 1 0"/>
+              </filter>
+              <pattern id="p-velours" patternUnits="userSpaceOnUse" width="1200" height="1200">
+                <rect width="1200" height="1200" fill="#08021a"/>
+                <rect width="1200" height="1200" filter="url(#f-velours)" opacity="0.8"/>
+                <ellipse cx="450" cy="380" rx="350" ry="220" fill="rgba(140,70,220,0.22)"/>
+              </pattern>
+              <pattern id="p-satin" patternUnits="userSpaceOnUse" width="1200" height="1200">
+                <image href="sequins2.jpg" width="1200" height="1200" preserveAspectRatio="xMidYMid slice"/>
+              </pattern>
+              <pattern id="p-denim" patternUnits="userSpaceOnUse" width="1200" height="1200">
+                <image href="mosaique.jpg" width="1200" height="1200" preserveAspectRatio="xMidYMid slice"/>
+              </pattern>
+              <pattern id="p-diamant" patternUnits="userSpaceOnUse" width="1200" height="1200">
+                <image href="diamantmatiere.jpg" width="1200" height="1200" preserveAspectRatio="xMidYMid slice"/>
+              </pattern>
+            </defs>
+            <path id="product-shape-2" fill="url(#p-cuir)" d="M400.63,345.17c4.22-4.15,25.83-21.37,78.21-2.16.06.02.1.04.16.05,1.63.41,29.92,7.95,60.79,39.91,31.81,32.93,42.13,42.56,42.13,42.56,0,0,13.88,14.83,35.99-4.8.08-.07.15-.15.22-.23,1.96-2.39,32.28-39.29,38.93-44.72,6.87-5.6,39.01-44.63,105.67-49.74.05,0,.11,0,.16,0h0c1.04,0,1.89.85,1.89,1.92.02,10.5-.11,60.95-4.78,71.55-5.22,11.84-18.48,40.24-35.93,51.32s-37.49,16.53-69.45,11.42c-.11-.02-.22-.04-.32-.08-2.63-.91-37.86-13.03-49.48-13.76-12.07-.76-20.72.91-20.72.91,0,0-30.73,6.97-45.79,9.7-3.41.62-6.01,1.02-7.28,1.08-6.86.3-21.47,6.23-45.32-1.21-23.85-7.44-43.08-22.47-45.61-25.66s-22.96-24.14-28.32-43.58c-4.7-17.04-10.33-37.72-11.65-42.57-.19-.68,0-1.41.51-1.9Z"/>
+          </svg>
+
+          <div class="glitch-layer" id="glitch-layer" aria-hidden="true"></div>
+        </div>
+
+        <div class="spectrum-bar"></div>
+      </div>
+    </section>
+
+    <section class="col-config">
+      <div class="config-panel">
+
+        <div class="panel-header">
+          <div class="panel-tag">// CONFIGURATEUR SPECTRAL</div>
+          <h1 class="panel-title">Bustier <span class="title-chrome">Ultra Chrome</span></h1>
+          <div class="panel-price">
+            <span class="price-label">PRIX</span>
+            <span class="price-val" id="price-val">480,00 €</span>
+          </div>
+        </div>
+
+        <div class="panel-divider"></div>
+
+        <div class="param-block">
+          <div class="param-header">
+            <span class="param-id">01</span>
+            <span class="param-name">FRÉQUENCE SPECTRALE</span>
+            <span class="param-val" id="hex-display">#FF7F00</span>
+          </div>
+          <div class="param-control">
+            <div class="color-presets">
+              <button class="color-chip active" data-hex="ff7f00" style="background:#ff7f00" title="#FF7F00"></button>
+              <button class="color-chip" data-hex="ff2d55" style="background:#ff2d55" title="#FF2D55"></button>
+              <button class="color-chip" data-hex="ff0090" style="background:#ff0090" title="#FF0090"></button>
+              <button class="color-chip" data-hex="bf00ff" style="background:#bf00ff" title="#BF00FF"></button>
+              <button class="color-chip" data-hex="00f0ff" style="background:#00f0ff" title="#00F0FF"></button>
+              <button class="color-chip" data-hex="00ff88" style="background:#00ff88" title="#00FF88"></button>
+              <button class="color-chip" data-hex="f5f5f5" style="background:#f5f5f5" title="#F5F5F5"></button>
+              <button class="color-chip" data-hex="1a1a2e" style="background:#1a1a2e" title="#1A1A2E"></button>
+              <label class="color-chip color-chip-custom" title="Couleur personnalisée">
+                <span>+</span>
+                <input id="color-picker" value="ff7f00" style="position:absolute;opacity:0;width:0;height:0;">
+              </label>
+            </div>
+            <span class="param-hint">↳ PROGRAMME TA VIBRATION CHROMATIQUE</span>
+          </div>
+        </div>
+
+        <div class="panel-divider"></div>
+
+        <div class="param-block">
+          <div class="param-header">
+            <span class="param-id">02</span>
+            <span class="param-name">INTENSITÉ DICHROÏQUE</span>
+            <span class="param-val" id="matiere-display">SEQUIN</span>
+          </div>
+          <div class="param-control">
+            <div class="texture-grid">
+              <button class="tex-btn" data-texture="none" data-label="SANS" data-price="480">
+                <div class="tex-swatch tex-swatch-none"></div>
+                <span>SANS</span>
+              </button>
+              <button class="tex-btn active" data-texture="satin" data-label="SEQUIN" data-price="500">
+                <div class="tex-swatch" style="background:url('sequin.png') center/cover,linear-gradient(135deg,#d4af37,#f0e68c)"></div>
+                <span>SEQUIN</span>
+              </button>
+              <button class="tex-btn" data-texture="denim" data-label="MOSAÏQUE" data-price="560">
+                <div class="tex-swatch" style="background:url('mosaique.jpg') center/cover,linear-gradient(135deg,#4682b4,#87ceeb)"></div>
+                <span>MOSAÏQUE</span>
+              </button>
+              <button class="tex-btn" data-texture="diamant" data-label="DIAMANT" data-price="580">
+                <div class="tex-swatch" style="background:linear-gradient(135deg,#e8f4ff,#fff,#a8d4f5,#d0eaff)"></div>
+                <span>DIAMANT</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-divider"></div>
+
+        <!-- SILHOUETTE -->
+        <div class="param-block">
+          <div class="param-header">
+            <span class="param-id">03</span>
+            <span class="param-name">STRUCTURE DU HAUT</span>
+            <span class="param-val" id="silhouette-display">1 BRETELLE</span>
+          </div>
+          <div class="param-control">
+            <div class="silhouette-grid">
+              <button class="sil-btn active" data-img="bustierPantone.jpg" data-label="1 BRETELLE">
+                <span class="sil-icon">⌒</span>
+                <span>1 BRETELLE</span>
+              </button>
+              <button class="sil-btn" data-img="2bretelles.png" data-label="2 BRETELLES">
+                <span class="sil-icon">⌒⌒</span>
+                <span>2 BRETELLES</span>
+              </button>
+              <button class="sil-btn" data-img="sansbretelles.png" data-label="SANS BRETELLES">
+                <span class="sil-icon">▭</span>
+                <span>SANS BRETELLES</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-divider"></div>
+
+        <div class="cta-block">
+          <button class="btn-cart" id="btn-cart">
+            <span class="btn-cart-text">AJOUTER AU PANIER</span>
+            <span class="btn-cart-icon">🛒</span>
+          </button>
+          <button class="btn-primary">
+            <span class="btn-text">PROGRAMMER LA PIÈCE</span>
+            <span class="btn-arrow">→</span>
+          </button>
+          <button class="btn-ghost">DEMANDE SUR-MESURE</button>
+        </div>
+
+        <div class="data-footer">
+          <div class="data-item">
+            <span class="data-key">LAB</span>
+            <span class="data-val">PARIS_FR</span>
+          </div>
+          <div class="data-item">
+            <span class="data-key">DÉLAI</span>
+            <span class="data-val">21–28J</span>
+          </div>
+          <div class="data-item">
+            <span class="data-key">SHIP</span>
+            <span class="data-val">FREE</span>
+          </div>
+          <div class="data-item">
+            <span class="data-key">ÉD.</span>
+            <span class="data-val">LIMITÉE</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
